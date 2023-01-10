@@ -30,7 +30,12 @@
 	</header><!-- .entry-header -->
 
 	<?php kraken_post_thumbnail(); ?>
-  <div>prix : <?php the_field("nombre"); ?></div>
+<div>
+  <p>prix : <?php the_field("nombre"); ?></p>
+  <p>marque : <?php the_field("marque"); ?></p>
+  <p>Année : <?php the_field("annee_model"); ?></p>
+
+</div>
 	<div class="entry-content">
 		<?php
 		the_content(
